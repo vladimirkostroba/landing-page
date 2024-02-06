@@ -11,10 +11,8 @@ refs.scrollUpBtn.addEventListener('click', scrollUp);
 // ///
 
 function openModal(e){
-    if(document.documentElement.clientWidth < 1200){
         refs.modal.classList.add("open-modal");
-        refs.closeModalBtn.classList.remove('closed-btn');
-    }
+        refs.closeModalBtn.classList.remove('closed-btn');    
 }
 
 function closeModal(){
