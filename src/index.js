@@ -6,11 +6,8 @@ const refs = {
     }
 
 
-if (document.documentElement.clientWidth < 1200) {
-   refs.openModalBtn.addEventListener('click', openModal);
-   refs.closeModalBtn.addEventListener('click', closeModal);
-}
-
+refs.openModalBtn.addEventListener('click', openModal);
+refs.closeModalBtn.addEventListener('click', closeModal);
 refs.scrollUpBtn.addEventListener('click', scrollUp);
 
 // ///
