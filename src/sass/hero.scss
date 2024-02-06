@@ -1,0 +1,105 @@
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Ubuntu', sans-serif;
+
+.hero{
+    background-color: rgb(117, 80, 222);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero__title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.hero__description{
+    display: inline-block;
+    max-width: 474px;
+    
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+
+    color: #fff;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero__description > strong {
+    color: #fcae26;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 694px) {
+    .hero{
+        background-image: url(../images/baner/mob.png);
+    }
+
+    .hero__title{
+        text-align: center;
+        margin-bottom: 22px;
+        font-size: 35px;
+    }
+  }
+
+  @media screen and (min-width: 695px) {
+   .hero__description{
+    position: relative;
+    padding-left: 70px;
+   }
+
+   .hero__description::before{
+    position: absolute;
+    content: ''; 
+    left: 35px;
+    top: 18px;    
+    background-image: url(../images/baner/vertical-line.png);
+    height: 50px;
+    width: 2px;
+   }
+  }
+  
+  @media screen and (max-width: 1199px) {
+    .hero{
+        background-image: url(../images/baner/tablet.png);
+        padding-top:325px;
+        padding-bottom: 130px;
+    }
+
+    .hero > .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero__title{
+        margin-bottom: 15px;
+        font-size: 45px;
+    }
+
+    
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .hero{
+        align-items: center;
+        background-image: url(../images/baner/desctop.png);
+        padding-bottom: 120px;
+        padding-top: 600px;
+    }
+
+    .hero__title{
+        margin-bottom: 15px;
+        font-size: 65px;
+    }
+
+    .hero__description{
+        font-size: 25px;
+    }
+
+    .hero__description::before{
+        height: 75px;
+    }
+
+  }

@@ -1,0 +1,37 @@
+.teaching-principels{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.teaching-principels__main-title::before{
+    background-image: url(../images/icon2.png);
+}
+
+.principels-list__item{
+    padding: 15px 45px;
+}
+
+@media screen and (min-width: 695px) {
+    .principels-list{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .principels-list__item{
+        flex-basis: 50%;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .teaching-principels{
+        margin-top: 100px;
+        padding-top: 115px;
+        padding-bottom: 115px;
+        background-color: #fafafa;
+    }
+    
+    .principels-list__item{
+        flex-basis: 25%;
+    }
+  }

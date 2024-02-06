@@ -1,0 +1,129 @@
+.list__description{
+    font-family: var(--primary-font-text);
+    font-weight: 400;
+    font-size: 16px;
+
+    color: var(--primary-text-color);
+
+    margin-bottom: 25px;
+}
+
+.direcion-list__age{
+    position: relative;
+    font-family: var(--primary-font-title);
+    font-weight: 700;
+    font-size: 30px;
+
+    color: var(--accent-color);
+
+}
+
+.direcion-list__item{
+    background-color: var(--primary-bgcolor);
+    border-radius: 3px;
+
+    // transform: scale(1);
+    transition: all 250ms linear;
+}
+
+.direcion-list__age > b{
+    position: absolute;
+    top: 7px;
+    padding: 0;
+    margin-left: 10px;
+
+    font-family: var(--primary-font-text);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.2;
+
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.direcion-list__age::after{
+    display: block;
+    content: "";
+    background-image: url(../images/icons/Arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 20px;
+    height: 16px;
+
+    margin-top: 20px;
+
+}
+
+// hover
+.direcion-list__item:hover,
+.direcion-list__item:focus{
+    background-color: var(--accent-color);
+}
+
+
+.direcion-list__item:hover .direcion-list__description,
+.direcion-list__item:focus .direcion-list__description{
+    color: #fff;
+}
+
+.direcion-list__item:hover .direcion-list__age,
+.direcion-list__item:focus .direcion-list__age{
+    color: #fff;
+}
+
+.direcion-list__item:hover .direcion-list__age > b,
+.direcion-list__item:focus .direcion-list__age > b{
+    border-bottom: 1px solid #fff;
+}
+
+.direcion-list__item:hover .direcion-list__age::after,
+.direcion-list__item:focus .direcion-list__age::after{
+    background-image: url(../images/icons/arrow-hover.png);
+}
+
+// 
+
+// ..........
+
+@media screen and (max-width: 694px) {
+    .direcion-list__item{
+        padding: 25px 45px;
+        margin-bottom: 15px;
+    }
+
+    .direcion-list__item:last-child{
+        margin-bottom: 0;
+    }
+  }
+
+@media screen and (min-width: 695px) {
+    .direcion-list{
+        display: flex;
+        flex-wrap: wrap;
+        // align-items: center;
+    }
+
+    .direcion-list__item{
+        width: 50%;
+        padding: 45px;
+    }
+
+ 
+    .list__description{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .direcion-list__age{
+        font-size: 40px;
+    }
+
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    .direcion-list__item{
+        flex-basis: 25%;
+    }
+  }
