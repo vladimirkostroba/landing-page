@@ -40,6 +40,18 @@ background-position: center;
     z-index: 999;
 }
 
+.close-modal-btn::before{
+    display: block;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/icons/close.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
 
 .burger::before{
     display: block;
@@ -104,7 +116,6 @@ background-position: center;
         display: none;
         align-items: center;
         justify-content: center;
-    
         background-color: #824fe3;
     
     }
